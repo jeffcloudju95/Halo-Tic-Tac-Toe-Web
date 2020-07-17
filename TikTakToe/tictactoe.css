@@ -1,0 +1,186 @@
+html {
+	background-image: linear-gradient(#5c5c5c, #2e2e2e);
+}
+
+h1 {
+	font-size: 100px;
+	text-align: center;
+	color: white;
+	opacity: 75%;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+h2 {
+	color: white;
+
+}
+
+body {
+	margin-left: auto;
+	margin-right: auto;
+}
+/* SCORE */
+.scoreContainer {
+    text-align: center;
+	/* position: relative; */
+}
+
+.tictactoe-background {
+	background: url("tictacbackground.jpg") no-repeat;
+	background-size: cover;
+	background-position: center 30%;
+	opacity: 95%;
+	margin-left: .35%;
+	margin-right: .35%;
+}
+
+.player1-background {
+    display:inline-block;
+    width:49.5%;
+	float: center;
+	background: url("Player1.jpg");
+	opacity: 0.95;
+	background-position: center right;
+}
+
+.player2-background {
+    display:inline-block;
+	width: 49.5%;
+	float: center;
+	background:  url("player2.jpg");
+	opacity: 0.95;
+	background-position: center 14%;
+}
+
+/* GRID */
+:root {
+	--cell-size: 200px;
+	--mark-size: cal(var(--cell-size) *.9);
+}
+
+.grid-background { 
+	background: url("background\ image.jpg");
+	opacity: 0.95;
+	margin-left: .35%;
+	margin-right: .35%;
+	background-repeat: no-repeat;
+	background-position: top;
+	justify-content: center;
+}
+
+.grid-container { /* board */
+	grid-gap: 10px;
+	
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	justify-items: center;
+	align-items: center;
+	grid-template-columns: repeat(3, auto);
+}
+
+.cell { /* cell */
+	width: var(--cell-size);
+	height: var(--cell-size);
+	border: 5px solid black;
+	opacity: .75;
+}
+
+#buttonXO {
+	display: block;
+	width: 100%;
+	border: none;
+	background-color: #556b2f;
+	/* background: url("o-tictac.png");
+	background-position: center; */
+	background-size: contain; 
+	padding: 50% 50%;
+	font-size: 16px;
+	cursor: pointer;
+	text-align: center;
+	opacity: 50%;
+}
+
+/* RESET BUTTON */
+.restartDiv{
+	text-align: center;
+	padding: 20px;
+}
+
+#restartBtn {
+	background-color: #556b2f;
+	opacity: 75%;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	margin-bottom: 10%;
+}
+
+/* WINNING MESSAGE */
+.winning-message {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, .9);
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 5rem;
+	flex-direction: column;
+  }
+  
+  .winning-message.button {
+	font-size: 3rem;
+	background-color: white;
+	border: 1px solid black;
+	padding: .25em .5em;
+	cursor: pointer;
+  }
+  
+  .winning-message button:hover {
+	background-color: black;
+	color: white;
+	border-color: white;
+  }
+  
+  .winning-message.show {
+	display: flex;
+  }
+
+  /* X AND O */
+  .cell.x {
+	  background: url(x-tictac.jpg);
+	  background-size: contain;
+  }
+
+  .cell.circle {
+	  background: url(o-tictac.png);
+	  background-size: contain;
+  }
+
+  /* HOVER BOARD X AND CIRCLE */
+  .cell.xHover {
+	  background: url(x-tictac.jpg);
+	  background-size: contain;
+	  opacity: 25%;
+  }
+
+  .cell.circleHover {
+	background: url(o-tictac.png);
+	background-size: contain;
+	opacity: 25%;
+}
+
+
